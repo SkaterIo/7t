@@ -320,7 +320,9 @@ a {
     
 
     .pricing {
-   
+      animation: hidvis;
+      animation-timeline: view();
+      
         margin-left: 2rem;
         margin-bottom: 4rem;
     display: grid;
@@ -329,7 +331,18 @@ a {
     
     }
     
-    
+    @keyframes hidvis {
+      0% {
+        opacity: 0;
+      }
+      55%,65% {
+        opacity: 1;
+      }
+      100% {
+        opacity: 0;
+       
+      }
+    }
      .sub-header{
         max-width: 600px;
         margin: auto;
@@ -337,6 +350,9 @@ a {
         text-align: center;
         color: #fff;
         font-size: 32px;
+        animation: hidvis;
+      animation-timeline: view();
+      
     }
     
 section {
@@ -425,7 +441,8 @@ flex-direction: column;
 
     
     .acc-cont {
-        
+        animation: hidvis;
+        animation-timeline: view();
         margin: 0px;
         margin-bottom: 4rem;
     display: flex;
