@@ -1,14 +1,21 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 body{
-margin: 0;
+margin: 0;scale: 0.996;
 padding: 0;
 background-color: #111;
+transition: background-color 0.3s ease, color 0.3s ease;
 }
 *{
 margin: 0;
 padding: 0;
 box-sizing: border-box;
 font-family: 'Poppins', sans-serif;
+
+}
+
+.join button {
+  margin: 0rem;
+  scale: 0.9;
 }
 /* header start*/
 .logo{
@@ -43,10 +50,22 @@ a.text-gray-500:hover {
 
 
 /* this is the card container a & p start*/
-.card-cont .card a {
+.card-cont .card i {
     color: #fff;
-    font-weight: 600;
+    font-weight: 400;
+    ;
+    font-size: 1.2rem;
    transition: 0.3s;
+   margin-top: 12rem;
+}
+
+.card-cont .card a {
+  color: #fff;
+  font-weight: 400;
+  ;
+  font-size: 1.2rem;
+ transition: 0.3s;
+ margin-top: 12rem;
 }
 
 .card-cont .card a:hover {
@@ -76,10 +95,7 @@ a.text-gray-500:hover {
 }
 
 
-.txt-port span {
-    -webkit-text-fill-color: transparent;
-    -webkit-text-stroke: 1px #fff;
-}
+
 .txt-port::after {
     content: '';
     box-shadow: 0  0 1000px 105px #ff000011;
@@ -268,18 +284,22 @@ a {
     background-color: #202020;
     border-radius: 20px;
     color: #fff;
-    width: 70%;
-    animation-timeline: view();
-    animation: hidvis Both;
-   scale: 0.9;
-    margin-left: -20px;
+ 
+   scale: 0.8;
+    
     }
 
-    
+   
+    i {
+      font-size: 1.3rem;
+    }
+
+    .card .content button {
+      font-size: 1.3rem;
+    }
    
     
     .pricing .card:hover {
-      box-shadow: rgba(65, 65, 65, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
         background-color: #313131;
     }
     
@@ -301,7 +321,7 @@ a {
 
     .pricing {
    
-        margin-left: 13rem;
+        margin-left: 2rem;
         margin-bottom: 4rem;
     display: grid;
     grid-template-columns: repeat(3,1fr);
@@ -326,8 +346,7 @@ flex-direction: column;
     
 }
     .pricing .card {
-      animation: hidvis ;
-      animation-timeline: view() ;
+       
          border: 2px solid transparent;
        
     }
@@ -337,7 +356,7 @@ flex-direction: column;
     background-color: #be7623;
     border-radius: 20px;
     color: #fff;
-    width: 70%;
+    width: 100%;
     
    
     }
@@ -348,7 +367,7 @@ flex-direction: column;
         background-color: #be7623;
         border-radius: 20px;
         color: #fff;
-        width: 70%;
+        width: 100%;
         
         border: 2px solid transparent;
         }
@@ -359,9 +378,8 @@ flex-direction: column;
             background-color: #be7623;
             border-radius: 20px;
             color: #fff;
-            width: 70%;
-            
-            border: 2px solid transparent;
+            width: 100%;
+   border: 2px solid transparent;
         }
         
     
@@ -374,6 +392,10 @@ flex-direction: column;
 
 
     /*this is the netflix acc card start*/
+    .acc-cont{
+      width: 102%;
+      
+    }
     .acc-cont .card h4 {
     font-size: 2rem;
     margin-bottom: 2rem;
@@ -395,6 +417,7 @@ flex-direction: column;
        margin-top: 20px;
         width: 40%;
         display: flex;
+        justify-content: center;
         align-items: center;
         
     }
@@ -402,28 +425,33 @@ flex-direction: column;
 
     
     .acc-cont {
-        scale: 0.9;
-        margin-left: 9rem;
+        
+        margin: 0px;
         margin-bottom: 4rem;
-    display: grid;
-    grid-template-columns: repeat(3,1fr);
-    }
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    scale: 0.8;
+}
     .acc-cont .card {
         display: flex;
         flex-direction: column;
-        justify-content: center;
-        animation: hidvis;
-    animation-timeline: view() ;
+        justify-content: center;      
 border: 2px solid transparent;
         transition: all 0.3s ease;
     padding: 2rem;
     background-color: #be7623;
     border-radius: 20px;
     color: #fff;
-    width: 70%;
-    
+    width: 90%;
     }
 
+
+    .acc-cont .card button {
+      font-size: 1.3rem;
+      margin-left: -3rem;
+      color: #ffffff;
+    }
 
 
 
@@ -432,11 +460,8 @@ border: 2px solid transparent;
     flex-direction: column;
     background-color: #131313;
 }
-.acc-cont .card:hover {
-   box-shadow: rgba(65, 65, 65, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
-
+    .acc-cont .card:hover {
         border-color: #fff;
-       
     }
 
         /*this is thenetfkix acc end*/
@@ -471,20 +496,20 @@ border: 2px solid transparent;
         display: flex;
         flex-flow: row wrap;
         padding: 30px 30px 20px 30px;
-        color: #ffffff;
-        background-color: #111;
+        color: #d8d5d5;
         
+        background-color: #141414;
+        
+        border-top: 2px solid #1a1a1a;
         border-top-left-radius: 2rem;
         border-top-right-radius: 2rem;
       }
+      .footer h1,h2,h3,h4,h5,h6{
+        font-size: x-large;
+      }
       
       ul.nav__ul li a {
-        transition: all 0.2s ease;
-        color: #a7a7a7;
-      }
-
-      ul.nav__ul li a:hover {
-        color: #fff;
+        color: #969595;
       }
       
       .footer > * {
@@ -510,8 +535,9 @@ border: 2px solid transparent;
       }
       
       .nav__title {
-        font-weight: 400;
-        font-size: 15px;
+        font-weight: 700;
+        font-size: 22px;
+
         
       }
       
@@ -533,11 +559,6 @@ border: 2px solid transparent;
         margin: 0.6em 0;
         font-size: 1rem;
         padding: 0 1.3em;
-        transition: all 0.2s ease;
-      }
-
-      .footer__btn:hover {
-        color: #fff;
       }
       
       .footer ul {
@@ -547,8 +568,14 @@ border: 2px solid transparent;
       
       .footer li {
         line-height: 2em;
+        
       }
-      
+      .footer * {
+        transition: 0.3s;
+      }
+      .footer *:hover {
+        color: #fff;
+      }
       .footer a {
         text-decoration: none;
       }
@@ -612,13 +639,159 @@ border: 2px solid transparent;
       }
     
 
-      @keyframes  hidvis {
-        0% {
-           opacity: 0;
-          
-        }
-        45%,55% {
-          opacity: 1;
+      /* this is the footer end */
+
+      .logo{
+
+        width: 60px;
+        height: 60px;
+    }
+img {
+  transition: 0.4s; ;
+}
+.card-cont .card {
+ 
+ 
+}
+    img:hover {
+      scale: 1.1;
+    }
+    /*nav start*/
+    nav {
+      
         
-        }
-      }
+        color: #cacaca;
+        margin: 10px auto 0;
+        position: relative;
+        width: 520px;
+        height: 50px;
+        font-size: 0;
+        border-radius: 100px;
+        z-index: 1;
+    }
+    nav a{
+        font-size: 15px;
+        color: #ffffff;
+        line-height: 50px;
+        z-index: 1;
+        display:inline-block;
+        text-align: center;
+        position: relative;
+        transition: 0.5s;
+        font-weight: 600;
+    }
+    nav .animation{
+        position: absolute;
+        height: 100%;
+        top:0;
+        z-index: 0;
+        color: #0000;
+        background-color: rgb(0, 0, 0);
+        border-radius: 10px;
+        transition: 0.5s;
+        border-radius: 100px;
+    }
+
+    nav a:hover {
+color: #ffffff;
+    }
+    
+    
+    nav  :nth-child(1){
+        width: 125px;
+        
+    }
+    
+    nav  :nth-child(2){
+        width: 125px;
+       left: 200;
+    }
+    nav .start-home,a:nth-child(2):hover~.animation{
+        width: 125px;
+        left: 125px;
+   
+    }
+    nav :nth-child(3){
+        width: 125px;
+       
+    }
+    nav .start-home,a:nth-child(3):hover~.animation{
+        width: 125px;
+        left: 250px;
+    
+    }
+    nav  :nth-child(4){
+        width: 140px;
+    
+    }
+    nav .start-home,a:nth-child(4):hover~.animation{
+        width: 140px;
+        left: 380px;
+
+    }
+    
+    nav .start-home,a:nth-child(1):hover~.animation{
+      
+        left: 0px;
+    }
+    /*nav end*/
+    .login-btn{
+        background-color: #fffdfd !important;
+        width: 100px;
+        height: 40px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 8px;
+    }
+    .container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 0 20px;
+    }
+    
+    .logo {
+        font-size: 24px;
+        text-decoration: none;
+        color: #fff;
+    }
+    
+    
+   .team-cont {
+   display: grid;
+    grid-template-columns: repeat(3 ,22rem);
+    justify-content: center;
+    text-align: center;
+   }
+   .team-cont .member {
+margin-bottom: 3rem;
+   }
+
+   .team-cont .member h4 {
+    color: #fff;
+    font-size: 1.3rem;
+    transition: all 0.3s;
+    cursor:default;
+   }
+
+   .team-cont .member h4:hover {
+    color: #be7623;
+   }
+
+   .team-cont .member p {
+    color: #4b4b4b;
+    cursor:default;
+   }
+
+   .sub-header p {
+    font-weight: 300;
+    font-size: 15px;
+    line-height: 32px;
+    letter-spacing: .03em;
+    color: #b5b5b5;
+    margin-bottom: 10rem;
+    
+   }
