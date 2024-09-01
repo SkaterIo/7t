@@ -1,4 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@media (max-width:450px) {
+ body {
+ visibility:collapse;
+ }
+
+  p {
+  visibility: visible !important;
+ }
+}
+
 body{
 margin: 0;scale: 0.996;
 padding: 0;
@@ -13,10 +23,19 @@ font-family: 'Poppins', sans-serif;
 
 }
 
+/* join discord and get started button start*/
 .join button {
   margin: 0rem;
+  transition: 0.3s;
   scale: 0.9;
 }
+.join button:nth-child(1):hover {
+  background-color: #091ab9 !important;
+}
+
+/* join discord and get started button end*/
+
+
 /* header start*/
 .logo{
     width: 60px;
@@ -299,9 +318,7 @@ a {
     }
    
     
-    .pricing .card:hover {
-        background-color: #313131;
-    }
+  
     
     .pricing .card h4 {
     font-size: 2rem;
@@ -343,6 +360,7 @@ a {
        
       }
     }
+    
      .sub-header{
         max-width: 600px;
         margin: auto;
@@ -407,6 +425,10 @@ flex-direction: column;
 /*this is the mols and features container end*/
 
 
+
+
+
+
     /*this is the netflix acc card start*/
     .acc-cont{
       width: 102%;
@@ -451,9 +473,8 @@ flex-direction: column;
     scale: 0.8;
 }
     .acc-cont .card {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;      
+       
+       
 border: 2px solid transparent;
         transition: all 0.3s ease;
     padding: 2rem;
@@ -481,7 +502,14 @@ border: 2px solid transparent;
         border-color: #fff;
     }
 
-        /*this is thenetfkix acc end*/
+        /*this is the netflix acc card end*/
+
+
+
+
+
+
+
 
     
     button * {
@@ -658,18 +686,23 @@ border: 2px solid transparent;
 
       /* this is the footer end */
 
+
+
+/*this is the ligi size start*/
       .logo{
 
         width: 60px;
         height: 60px;
     }
+
 img {
   transition: 0.4s; ;
 }
-.card-cont .card {
- 
- 
-}
+/*this is the ligi size end*/
+
+
+
+ /* this is the header animation start*/
     img:hover {
       scale: 1.1;
     }
@@ -751,31 +784,37 @@ color: #ffffff;
       
         left: 0px;
     }
+ /* this is the header animation end*/
+
     /*nav end*/
+
+    /* this is the login button start*/
     .login-btn{
-        background-color: #fffdfd !important;
+        background-color: #fffdfd ;
         width: 100px;
         height: 40px;
         display: flex;
         justify-content: center;
         align-items: center;
         border-radius: 8px;
+        transition: all 0.3s;
+        font-weight: 600;
+        border: 1px solid transparent;
     }
-    .container {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        max-width: 1200px;
-        margin: 0 auto;
-        padding: 0 20px;
-    }
-    
-    .logo {
-        font-size: 24px;
-        text-decoration: none;
-        color: #fff;
+
+    .login-btn:hover {
+background-color: #eceaea;
+color: #000000;
     }
     
+
+    
+    /* this is the login button end*/
+   
+   
+
+    
+    /* this is the teas container start*/
     
    .team-cont {
    display: grid;
@@ -812,3 +851,5 @@ margin-bottom: 3rem;
     margin-bottom: 10rem;
     
    }
+
+    /* this is the teas container end*/
